@@ -1,0 +1,138 @@
+.carousel-item {
+    height: 730px;
+}
+
+.btn-white {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0px;
+    backdrop-filter: blur(5px);
+}
+
+.btn-white:hover,
+.btn-masuk:hover {
+    color: white;
+    border-radius: 0px;
+    background-color: #C37B52;
+    transition-delay: 100ms;
+}
+
+.carousel-indicators li {
+    margin-right: 0!important;
+    margin-left: 0!important;
+}
+
+.carousel-indicators {
+    margin-right: 0%!important;
+    margin-left: 7%!important;
+    bottom: 20px;
+}
+
+.carousel-control-prev {
+    left: -70px!important;
+}
+
+.carousel-control-next {
+    right: 70px!important;
+}
+
+.fs-7 {
+    font-size: 14px !important;
+}
+
+.navbar {
+    padding: 16px 0;
+}
+
+.py-48 {
+    height: 48px;
+}
+
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pt-80 {
+    padding-top: 80px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.img-sec2 {
+    max-width: 100%;
+    height: auto;
+    background-size: cover!important;
+}
+
+.image {
+    position: relative;
+}
+
+.image-img {
+    display: block;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 352px;
+    height: 472px;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    color: white;
+    margin-left: 12px;
+    opacity: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.explore-overlay {
+    position: sticky;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end!important;
+}
+
+.loc-lombok {
+    position: relative;
+    /* position: absolute; */
+    width: 180px;
+    top: -520px;
+    left: -90px;
+    /* left: 53px; */
+    /* top: 2000px; */
+    background: #fff;
+    box-shadow: 0px 4px 30px rgba(239, 239, 239, 0.25);
+    border-radius: 999px;
+}
+
+.px-182{
+    padding-left: 182px;
+    padding-right: 182px;
+}
+
+.border-radius-none{
+    border-radius: 0px;
+}
+
+.border-none{
+    border: none;
+}
+
+.h-48{
+    height: 48px;
+}
