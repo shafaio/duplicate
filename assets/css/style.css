@@ -1,8 +1,8 @@
-*{
+* {
     font-family: 'Poppins';
 }
 
-html {
+.scroll-smooth {
     scroll-behavior: smooth;
 }
 
@@ -154,33 +154,96 @@ html {
     border-radius: 999px;
 }
 
-.px-182{
+.px-182 {
     padding-left: 182px;
     padding-right: 182px;
 }
 
-.border-radius-none{
+.border-radius-none {
     border-radius: 0px;
 }
 
-.border-none{
+.border-none {
     border: none;
 }
 
-.h-40{
+.h-40 {
     height: 40px;
 }
 
-.btn-border-2px{
+.btn-border-2px {
     background: #FFFFFF;
     border: 2px solid #D9D9D9;
 }
 
-.fs-14px{
+.fs-14px {
     font-size: 14px;
 }
 
-.loginGoogle:hover{
+.loginGoogle:hover {
     border: 2px solid #D9D9D9;
     background-color: #FFC876;
+}
+
+.obj-overlay {
+    /* opacity: 0; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 242px;
+    height: 55px;
+    background: radial-gradient(536.72% 536.72% at 34.71% -75%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 100%);
+    justify-content: end;
+    bottom: 15px;
+    left: 31px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.card-hover:hover {
+    opacity: 1;
+}
+
+.baybay:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    border: 0px solid!important;
+}
+
+.mt-230 {
+    margin-top: 230px;
+}
+
+.pl-xx {
+    padding-left: 28px;
+}
+
+.bg-blue {
+    background-color: #F1F2F6;
+}
+
+.btn-brown {
+    background-color: #C37B52;
+    color: white !important;
+}
+
+.btn-brown:hover {
+    background: linear-gradient(90deg, #C37B52 0%, #E3966A 100%);
+}
+
+.fs-10px {
+    font-size: 10px;
+}
+
+.box-ulasan {
+    height: 32px;
+    width: 32px;
+    background-color: #1A776F;
+    color: white;
+    line-height: 32px;
 }
