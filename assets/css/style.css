@@ -25,7 +25,6 @@
 }
 
 #footer {
-    /* background-color: #F8C3B4; */
     border-top: 1px solid #F8C3B4;
 }
 
@@ -247,3 +246,17 @@
     color: white;
     line-height: 32px;
 }
+
+.btn-edit-profile {
+    width: 120px;
+    height: 48px;
+    border: 2px solid #C37B52;
+    background-color: white !important;
+    border-radius: 999px;
+}
+
+.border-top-section {
+    border-top: 1px solid #F8C3B4;
+}
+
+.btn-edit-profile:hover {}

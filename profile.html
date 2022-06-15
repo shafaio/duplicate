@@ -73,12 +73,22 @@
     <section>
         <div class="jumbotron jumbotron-fluid" style="background-image: url(assets/img/background-profile.png); background-repeat: no-repeat; background-size: cover; height: 400px;">
             <div class="container">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="assets/img/photo-profile.png" alt="" style="padding-top: 220px;" class="position-absolute">
+                <div class="row" style="margin-top: 220px; height: 208px;">
+                    <div class="col-2">
+                        <img src="assets/img/photo-profile.png" alt="" class="position-absolute">
+                    </div>
+                    <div class="col-6">
+                        <div class="position-absolute" style="bottom: 35px;">
+                            <h4 class="m-0">Nur Zendaya</h4>
+                        </div>
+                    </div>
+                    <div class="col-4 pr-0">
+                        <div class="position-absolute" style="bottom: 0; right: 0;">
+                            <!-- <h4 class="m-0">Nur Zendaya</h4> -->
+                            <button type="button" class="btn align-middle btn-edit-profile float-right fw-normal p-0" style="bottom: 0;">Edit Profile</button>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -221,7 +231,7 @@
     </section>
 
     <section class="footer " id="footer">
-        <div class="container py-3 ">
+        <div class="container py-3">
             <div class="row ">
                 <div class="col py-3 ">
                     <p class="mb-0 p-0 " style="font-size: 12px; ">2020 © All Right Reserved.</p>
@@ -232,6 +242,33 @@
                         <span class="ml-3 "><img src="assets/img/facebook.svg " alt=" "></span>
                         <span class="ml-3 "><img src="assets/img/youtube.svg " alt=" "></span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="saran pt-3 pb-3 border-top-section" id="saran">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="subtitle ">
+                        <img src="assets/img/border.svg" class="pr-3" alt=" ">
+                        <h6 class="d-inline-block">Kritik dan Saran</h6>
+                    </div>
+                    <h1 class="font-sora m-0">Enjoy Explore need</h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control border-radius-none h-40 fs-14px" id="inputName" aria-describedby="emailHelp" placeholder="Nama">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control border-radius-none h-40 fs-14px" id="inputName" aria-describedby="emailHelp" placeholder="Email">
+                    </div>
+                    <div class="form-group pb-4">
+                        <textarea class="form-control border-radius-none" id="exampleFormControlTextarea1" rows="3" placeholder="Saran"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block border-radius-none border-none h-40 fs-14px btn-brown">Submit</button>
+
                 </div>
             </div>
         </div>
