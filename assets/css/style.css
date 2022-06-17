@@ -20,6 +20,11 @@
     color: #232323 !important;
 }
 
+.navbar-brand.scrolled {
+    color: #232323 !important;
+    transition: 0.75s ease;
+}
+
 .text-white.scrolled {
     color: #232323 !important;
 }
@@ -163,7 +168,7 @@
 }
 
 .border-none {
-    border: none;
+    border: none !important;
 }
 
 .h-40 {
@@ -250,7 +255,7 @@
 .btn-edit-profile {
     width: 120px;
     height: 48px;
-    border: 2px solid #C37B52;
+    border: 1px solid #C37B52;
     background-color: white !important;
     border-radius: 999px;
 }
@@ -260,3 +265,59 @@
 }
 
 .btn-edit-profile:hover {}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item.active {
+    border-radius: 0;
+    background-color: #F5F3EB;
+    color: #232323;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: #1A776F;
+}
+
+.border-bottom-04 {
+    border-bottom: 1px solid #EBECF1;
+}
+
+.color-02 {
+    color: #788896;
+}
+
+.color-2323 {
+    color: #232323;
+}
+
+.resize-65x65 {
+    height: 65px;
+    width: 65px;
+}
+
+.filt {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
+.change-my-color {
+    fill: #232323;
+}
+
+.border-radius-999 {
+    border-radius: 999px;
+}
+
+.btn-border-brown {
+    color: #232323;
+    background-color: #FFFFFF;
+    border: 1px solid #C37B52;
+}
+
+.year {
+    width: 80px;
+    height: 48px;
+}

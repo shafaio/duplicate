@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.svg" type="image/x-icon" />
     <title>Document</title>
 </head>
 
@@ -27,7 +28,6 @@
             <a class="navbar-brand" href="#">
                 <img src="assets/img/arrow-left.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Enjoy Explore
             </a>
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +37,7 @@
                         <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item mr-3 fs-7 active">
-                        <a class="nav-link" href="#">Pariwisata</a>
+                        <a class="nav-link" href="detail.html">Pariwisata</a>
                     </li>
                     <li class="nav-item mr-3 fs-7">
                         <a class="nav-link" href="#">Tentang Kami</a>
@@ -57,7 +57,7 @@
                     </a>
                     <a class="dropdown-item my-2" style="font-size: 14px;" href="#">
                         <span>
-                            <img src="assets/img/drop-down-edit-profile.svg" alt="" class="my-auto pr-2"> 
+                            <img src="assets/img/drop-down-edit-profile.svg" alt="" class="my-auto pr-2 h-40 fs-7"> 
                         </span> Edit Profile
                     </a>
                     <a class="dropdown-item" style="font-size: 14px;" href="#">
@@ -126,7 +126,7 @@
             <div class="row mb-4 p-0">
                 <div class="d-flex p-0">
                     <h3 class="m-0 p-0 fw-600" style="font-size: 32px;">ULASAN</h3>
-                    <div class="box-ulasan text-center my-auto ml-5">0</div>
+                    <div class="box-ulasan text-center my-auto ml-3">0</div>
                 </div>
             </div>
             <div class="row">
@@ -142,8 +142,8 @@
                         </div>
                         <div class="col-9">
                             <span><img src="assets/img/star-profile.svg" alt=""></span>
-                            <p class="m-0 fs-14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos ad iure, adipisci culpa fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores veniam quisquam unde perferendis ex explicabo, iste
-                                accusamus saepe, eum officia totam nostrum expedita fugiat cum illum nulla nobis aliquid.</p>
+                            <p class="m-0 fs-14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos ad iure, adipisci culpa fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores veniam quisquam unde perferendis ex explicabo, isteaccusamussaepe,
+                                eum officia totam nostrum expedita fugiat cum illum nulla nobis aliquid.</p>
                         </div>
                     </div>
                 </div>
@@ -228,9 +228,31 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <p class="p-0 text-end mb-3">Lihat Semua</p>
+            </div>
     </section>
 
-    <section class="footer " id="footer">
+    <section>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="d-flex p-0">
+                        <h3 class="m-0 p-0 fw-600" style="font-size: 32px;">FOTO</h3>
+                        <div class="box-ulasan text-center my-auto ml-3">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button type="button" class="btn btn-brown border-radius-999 mr-2 h-40 fs-7 year">2022</button>
+                <button type="button" class="btn btn-border-brown border-radius-999 mr-2 h-40 fs-7 year">2021</button>
+                <button type="button" class="btn btn-border-brown border-radius-999 mr-2 h-40 fs-7 year">2020</button>
+            </div>
+            <hr class="color-2323">
+        </div>
+    </section>
+
+    <section class="footer mt-230" id="footer">
         <div class="container py-3">
             <div class="row ">
                 <div class="col py-3 ">
@@ -247,32 +269,7 @@
         </div>
     </section>
 
-    <section class="saran pt-3 pb-3 border-top-section" id="saran">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="subtitle ">
-                        <img src="assets/img/border.svg" class="pr-3" alt=" ">
-                        <h6 class="d-inline-block">Kritik dan Saran</h6>
-                    </div>
-                    <h1 class="font-sora m-0">Enjoy Explore need</h1>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input type="text" class="form-control border-radius-none h-40 fs-14px" id="inputName" aria-describedby="emailHelp" placeholder="Nama">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control border-radius-none h-40 fs-14px" id="inputName" aria-describedby="emailHelp" placeholder="Email">
-                    </div>
-                    <div class="form-group pb-4">
-                        <textarea class="form-control border-radius-none" id="exampleFormControlTextarea1" rows="3" placeholder="Saran"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block border-radius-none border-none h-40 fs-14px btn-brown">Submit</button>
 
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
