@@ -358,3 +358,20 @@ html {
     background-color: #565e64;
     border-color: #51585e;
 }
+
+.h-64 {
+    height: 48px;
+}
+
+.card {
+    border-radius: 0!important;
+}
+
+.note-toolbar {
+    background: hsl(0deg 0% 100% / 11%)!important;
+}
+
+.note-editor .note-toolbar,
+.note-popover .popover-content {
+    padding: 7px 7px 12px 12px!important;
+}
