@@ -20,6 +20,9 @@ use App\Http\Controllers\SaranController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/pariwisata', function () {
+    return view('pariwisata.index');
+});
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login');
 
