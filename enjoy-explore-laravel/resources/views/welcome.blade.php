@@ -225,7 +225,9 @@
             <!-- </a> -->
         </div>
     </section>
-
+    
+    <form action="/" method="post">
+        @csrf
     <section class="saran" id="saran" style="background-color: #F5F3EB;">
         <div class="container py-80">
             <div class="row">
@@ -237,21 +239,29 @@
                     <h1 class="font-sora m-0">Enjoy Explore need</h1>
                 </div>
                 <div class="col-md-6">
-                    <div class="form-group">
-                        <input type="text" class="form-control border-radius-none h-40 fs-14px" id="inputName" aria-describedby="emailHelp" placeholder="Nama">
+                        @if(session()->has('SaranSuccess'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ session('SaranSuccess') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        @endif
+                        <div class="form-group">
+                            <input type="text" class="form-control border-radius-none h-40 fs-14px" id="name" name="name"aria-describedby="emailHelp" placeholder="Nama">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control border-radius-none h-40 fs-14px" id="email" name="email"aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="form-group pb-4">
+                            <textarea class="form-control border-radius-none" id="saran" name="saran" rows="3" placeholder="Saran"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block border-radius-none border-none h-40 fs-14px btn-brown">Submit</button>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control border-radius-none h-40 fs-14px" id="inputName" aria-describedby="emailHelp" placeholder="Email">
-                    </div>
-                    <div class="form-group pb-4">
-                        <textarea class="form-control border-radius-none" id="exampleFormControlTextarea1" rows="3" placeholder="Saran"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block border-radius-none border-none h-40 fs-14px btn-brown">Submit</button>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </form>
 
     <section class="footer " id="footer">
         <div class="container py-3 ">

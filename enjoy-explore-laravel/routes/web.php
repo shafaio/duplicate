@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,5 @@ Route::post('/register', [RegisterController::class, 'store'])->name('register')
 
 Route::get('/dashboard/index', [DashboardController::class, 'index'])->middleware('auth');
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::post('/', [SaranController::class, 'store']);

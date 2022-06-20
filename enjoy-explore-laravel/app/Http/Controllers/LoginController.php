@@ -32,7 +32,7 @@ class LoginController extends Controller
         $credentials = $validator->validate();
         if(Auth::attempt($credentials)){
             $request->session()->regenerate();
-            return redirect()->intended('/dashboard');
+            return redirect()->intended('/dashboard/index');
         }else{
 
             return back()->with('ErrorLogin','Login Gagal!!!');
@@ -47,7 +47,7 @@ class LoginController extends Controller
  
         $request->session()->regenerateToken();
  
-        return redirect('/home');
+        return redirect('/');
     }
   
 }
