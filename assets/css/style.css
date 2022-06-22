@@ -356,7 +356,7 @@ html {
 .show>.btn-secondary.dropdown-toggle {
     color: #232323 !important;
     background-color: #565e64;
-    border-color: #51585e;
+    /* border-color: #51585e; */
 }
 
 .h-64 {
