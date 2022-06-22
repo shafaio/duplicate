@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class DashboardController extends Controller
 {
     public static function index(){
-        return view('dashboard\index');
+        return view('dashboard/user/index');
     }
     
 }

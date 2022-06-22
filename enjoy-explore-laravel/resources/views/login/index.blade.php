@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Masuk</title>
     <style>
         * {
@@ -40,10 +40,10 @@
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                         {{ session('success') }}
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true">&times;</span>
                         </button>
-                      </div>
-                      @endif
+                    </div>
+                    @endif
                     @if(session()->has('ErrorLogin'))
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
                         {{ session('ErrorLogin') }}
@@ -60,8 +60,8 @@
                             @error('email')
                             <div class="invalid-feedback">
                                 {{ $message }}
-                              </div>
-                              @enderror 
+                            </div>
+                            @enderror 
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
@@ -69,8 +69,8 @@
                             @error('password')
                             <div class="invalid-feedback">
                                 {{ $message }}
-                              </div>
-                              @enderror 
+                            </div>
+                            @enderror 
                         </div>
                         <button type="submit" class="btn btn-primary btn-block border-radius-none border-none h-40 fs-14px" style="background-color: #C37B52;;">Masuk</button>
                     </form>
