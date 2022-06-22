@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('pariwisatas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id');
-            $table->string('nama');
-            $table->string('lokasi');
-            $table->text('deskripsi');
-            $table->string('img');
+            // $table->string('nama');
+            // $table->string('lokasi');
+            // $table->text('deskripsi');
+            $table->string('img')->nullable();
             $table->timestamps();
         });
     }

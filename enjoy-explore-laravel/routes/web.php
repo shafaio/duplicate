@@ -38,4 +38,5 @@ Route::post('/', [SaranController::class, 'store']);
 
 Route::post('/', [ProfileController::class, 'store']);
 
-Route::post('/', [PariwisataController::class, 'store']);
+Route::get('/pariwisata/submit', [PariwisataController::class, 'submit']);
+Route::post('/pariwisata/submit', [PariwisataController::class, 'store']);

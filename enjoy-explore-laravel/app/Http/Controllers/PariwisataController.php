@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Pariwisata;
 use App\Http\Requests\StorePariwisataRequest;
 use App\Http\Requests\UpdatePariwisataRequest;
+use Illuminate\Support\Facades\Validator;
 
 class PariwisataController extends Controller
 {
@@ -15,7 +16,15 @@ class PariwisataController extends Controller
      */
     public function index()
     {
-        //
+        return view('/pariwisata' ,[
+            "title" => "pariwisata"
+        ]);
+    }
+    public function submit()
+    {
+        return view('/pariwisata/submit' ,[
+            "title" => "pariwisata"
+        ]);
     }
 
     /**
@@ -36,7 +45,20 @@ class PariwisataController extends Controller
      */
     public function store(StorePariwisataRequest $request)
     {
-        //
+        $ValidateData = Validator::make($request->all(),
+        [
+            'img' => 'image|file|max:2048'
+        ]);
+        if ($ValidateData->fails()) {
+            return redirect('/pariwisata/submit')
+            ->withErrors($ValidateData)
+            ->withInput();
+        }
+        // $ValidateData = $validator['user_id']=1;
+        if($request->file('img')){
+            $ValidateData['img']=$request->file('img')->store('pariwisata-image');
+        }
+        Pariwisata::create($ValidateData);
     }
 
     /**
@@ -47,9 +69,7 @@ class PariwisataController extends Controller
      */
     public function show(Pariwisata $pariwisata)
     {
-        return view('/pariwisata' ,[
-                "title" => "pariwisata"
-            ]);
+        
         
     }
 

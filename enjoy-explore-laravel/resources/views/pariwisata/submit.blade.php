@@ -85,6 +85,8 @@
                         <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
                     </div>
                 </div>
+                <form action="/pariwisata/submit" method="post" enctype="multipart/form-data">
+                    @csrf
                 <div class="col-8 pl-5">
                     <div class="row mb-5">
                         <h6 class="m-0 fw-bold">Informasi Pariwisata</h6>
@@ -174,10 +176,10 @@
                     </div>
                     <div class="row mb-4">
                         <div class="col-3">
-                            <label for="">Deskripsi</label>
+                            <label for="image" class = "form-label">Deskripsi</label>
                         </div>
                         <div class="col-9">
-                            <input class="form-control border-radius-none fs-14px baybay" type="file" id="formFile" accept="image/jpg, image/jpeg, image/png">
+                            <input class="form-control border-radius-none fs-14px baybay" type="file" id="img" name="img" accept="image/jpg, image/jpeg, image/png">
                         </div>
                     </div>
                     <!-- <div class="form-group">
@@ -207,6 +209,7 @@
                     <h6>Abstract*</h6> -->
                     <button type="submit" class="btn btn-primary btn-block border-radius-none border-none h-40 fs-14px" style="background-color: #C37B52;;">Submit</button>
                 </div>
+            </form>
             </div>
         </div>
     </section>
