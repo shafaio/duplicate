@@ -16,7 +16,9 @@ class SaranController extends Controller
      */
     public function index()
     {
-        //
+        return view('/' ,[
+            "title" => "Beranda"
+        ]);
     }
 
     /**

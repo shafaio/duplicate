@@ -12,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon" />
     <title>Document</title>
 </head>
 
@@ -26,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark nav-pd">
         <div class="container">
             <a class="navbar-brand color-2323" href="#">
-                <img src="assets/img/logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">Enjoy Explore
+                <img src="img/logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">Enjoy Explore
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,23 +46,23 @@
             </div>
             <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle bg-transparent border-none baybay" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                    <span><img src="assets/img/logoProfile-black.svg" alt=""></span>
+                    <span><img src="img/logoProfile-black.svg" alt=""></span>
                 </a>
 
                 <div class="dropdown-menu border-radius-none" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" style="font-size: 14px;" href="#">
                         <span>
-                            <img src="assets/img/drop-down-profile.svg" alt="" class="my-auto pr-2"> 
+                            <img src="img/drop-down-profile.svg" alt="" class="my-auto pr-2"> 
                         </span> Profile
                     </a>
                     <a class="dropdown-item my-2" style="font-size: 14px;" href="#">
                         <span>
-                            <img src="assets/img/drop-down-edit-profile.svg" alt="" class="my-auto pr-2"> 
+                            <img src="img/drop-down-edit-profile.svg" alt="" class="my-auto pr-2"> 
                         </span> Edit Profile
                     </a>
                     <a class="dropdown-item" style="font-size: 14px;" href="#">
                         <span>
-                            <img src="assets/img/drop-down-logout.svg" alt="" class="my-auto pr-2"> 
+                            <img src="img/drop-down-logout.svg" alt="" class="my-auto pr-2"> 
                         </span> Keluar
                     </a>
                 </div>
@@ -81,7 +81,7 @@
                 </p>
                 <form class="d-flex ">
                     <input class="form-control me-2 baybay border-radius-none h-64 " type="search " placeholder="Search" aria-label="Search" name="">
-                    <button class="btn btn-brown border-radius-none px-4" type="submit ">Search <span class="pl-2 "><img src="assets/img/Union.svg " alt=" "></span></button>
+                    <button class="btn btn-brown border-radius-none px-4" type="submit ">Search <span class="pl-2 "><img src="img/Union.svg " alt=" "></span></button>
                 </form>
                 <div class="mb-5">
                     <div class="kotak d-inline-block mr-2"></div>

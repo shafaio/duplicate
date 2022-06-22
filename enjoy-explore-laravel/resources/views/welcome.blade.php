@@ -45,10 +45,10 @@
                     </li>
                 </ul>
             </div>
-            <a href="sign-in.php">
+            <a href="login">
                 <button class="btn ml-3 px-4 h-40 fs-7 btn-masuk text-white border-radius-none">Masuk</button>
             </a>
-            <a href="sign-up.php">
+            <a href="register">
                 <button class="btn ml-3 px-4 h-40 fs-7 btn-white text-white">Daftar</button>
             </a>
         </div>

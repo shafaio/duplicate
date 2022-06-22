@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PariwisataController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SaranController;
 
 /*
@@ -21,7 +23,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/pariwisata', function () {
-    return view('pariwisata.index');
+    return view('pariwisata/index');
 });
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login');
@@ -33,3 +35,7 @@ Route::get('/dashboard/index', [DashboardController::class, 'index'])->middlewar
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::post('/', [SaranController::class, 'store']);
+
+Route::post('/', [ProfileController::class, 'store']);
+
+Route::post('/', [PariwisataController::class, 'store']);
