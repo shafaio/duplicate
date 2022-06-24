@@ -1,318 +1,555 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>EnjoyExplore - Dashboard</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/logo.svg" type="image/x-icon" />
-    <title>Latifa Is The Best</title>
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-admin.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon" />
+
+
 </head>
 
-<body data-bs-spy="scroll-behavior" class="scroll-smooth">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark nav-pd">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Enjoy Explore
-            </a>
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item mr-3 fs-7">
-                        <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-3 fs-7">
-                        <a class="nav-link" href="detail.html">Pariwisata</a>
-                    </li>
-                    <li class="nav-item mr-3 fs-7">
-                        <a class="nav-link" href="#">Tentang Kami</a>
-                    </li>
-                </ul>
-            </div>
-            <a href="sign-in.php">
-                <button class="btn ml-3 px-4 h-40 fs-7 btn-masuk text-white border-radius-none">Masuk</button>
-            </a>
-            <a href="sign-up.php">
-                <button class="btn ml-3 px-4 h-40 fs-7 btn-white text-white">Daftar</button>
-            </a>
-        </div>
-    </nav>
+<body id="page-top">
 
-    <section class="test2" id="carousel" style="max-height: 730px;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="0">
-            <div class="container">
-                <ol class="carousel-indicators justify-content-start">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active mx-0"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url(assets/img/carousel-3.jpg); background-repeat: no-repeat; background-size: cover !important; background-position: 0 -250px;">
-                    <div class="container" style="padding-top: 150px;">
-                        <h1 class="display-4 text-light font-weight-bold font-sora">Ready to Explore <br> Lombok Destination</h1>
-                        <p class="lead text-light fs-6 lh-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Praesentium aliquid vel repellat cumque iste eveniet ullam</p>
-                        <a href="#content" target="_self">
-                            <button type="submit" class="btn btn-dark mt-4" style="background-color: #C37B52; border: 0px; border-radius: 0px; text-align: center; width: 120px; height: 48px;">Explore<span><img src="assets/img/btn-arrow.svg" class="pl-2" alt=""></span></button>
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=wM1TK0eCJoo">
-                            <button type="submit" class="btn btn-dark ml-3 bg-transparent mt-4" style="border: 0px; border-radius: 0px; text-align: center; height: 50px;"><span><img src="assets/img/play.svg" alt="" class="pr-2"></span> Watch Video</button>
-                        </a>
-                    </div>
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon mx-auto">
+                    <img src="img/logo.svg" alt="" style="height: 24px;">
                 </div>
-                <div class="carousel-item" style="background-image: url(assets/img/carousel-2.jpg); background-repeat: no-repeat; background-size: cover !important; background-position: 0 -110px;">
-                    <div class="container" style="padding-top: 150px;">
-                        <h1 class="display-4 text-light font-weight-bold font-sora">Ready to Explore <br> Lombok Destination</h1>
-                        <p class="lead text-light fs-6 lh-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Praesentium aliquid vel repellat cumque iste eveniet ullam</p>
-                        <a href="#porto">
-                            <button type="submit" class="btn btn-dark mt-4" style="background-color: #C37B52; border: 0px; border-radius: 0px; text-align: center; width: 120px; height: 48px;">Explore<span><img src="assets/img/btn-arrow.svg" class="pl-2" alt=""></span></button>
-                        </a>
-                        <a href="#about">
-                            <button type="submit" class="btn btn-dark ml-3 bg-transparent mt-4" style="border: 0px; border-radius: 0px; text-align: center; height: 50px;"><span><img src="assets/img/play.svg" alt="" class="pr-2"></span> Watch Video</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url(assets/img/carousel-1.jpg); background-repeat: no-repeat; background-size: cover !important; background-position: 0 -110px;">
-                    <div class="container" style="padding-top: 150px;">
-                        <h1 class="display-4 text-light font-weight-bold font-sora">Ready to Explore <br> Lombok Destination</h1>
-                        <p class="lead text-light fs-6 lh-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Praesentium aliquid vel repellat cumque iste eveniet ullam</p>
-                        <a href="#porto">
-                            <button type="submit" class="btn btn-dark mt-4" style="background-color: #C37B52; border: 0px; border-radius: 0px; text-align: center; width: 120px; height: 48px;">Explore<span><img src="assets/img/btn-arrow.svg" class="pl-2" alt=""></span></button>
-                        </a>
-                        <a href="#about">
-                            <button type="submit" class="btn btn-dark ml-3 bg-transparent mt-4" style="border: 0px; border-radius: 0px; text-align: center; height: 50px;"><span><img src="assets/img/play.svg" alt="" class="pr-2"></span> Watch Video</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <div class="sidebar-brand-text mx-3">EnjoyExplore</div>
             </a>
-            <a class="carousel-control-next justify-content-end" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            <div class="explore-overlay mt-5">
-                <a href="#about">
-                    <img src="assets/img/explore-sekarang.svg" class="" alt=" ">
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
                 </a>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="content " id="content" style="background-image: url(assets/img/sec2-beranda.svg); height:850px; ">
-        <div class=" container ">
-            <div class="row pt-80">
-                <div class="col-lg-6 ">
-                    <div class="subtitle ">
-                        <img src="assets/img/border.svg" class="pr-3" alt=" ">
-                        <h6 class="d-inline-block">EXPLORE NOW</h6>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
                     </div>
-                    <h1 class="font-sora">Explore Place Around You Lets See</h1>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-end pt-5 zindex-99">
-                    <button class="btn baybay" onclick="scrollr()"><span><img src="assets/img/arrow-left.svg "class="mr-3 " alt=" "></span></button>
-                    <button class="btn baybay" onclick="scrolll()"><span><img src="assets/img/arrow-right.svg " alt=" "></span></button>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Utilities</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
                 </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
             </div>
 
-            <div class="main-scroll-div d-flex">
-                <div class="row pt-40 flex-row flex-nowrap scroll-image cover">
-                    <div class="col-lg-4 child image">
-                        <img src="assets/img/sec2-1.png " class="img-sec2 image-img " alt="... ">
-                        <a href="detail.html">
-                            <div class="img-overlay">
-                                <h3>Pantai Mangsit</h3>
-                                <p class="fw-1">Kerandangan, Lombok Barat</p>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i> Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i> Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i> Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> Logout
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 child image">
-                        <img src="assets/img/sec2-2.png " class="img-sec2 image-img" alt="... ">
-                        <div class="img-overlay">
-                            <h3>Pantai Mangsit</h3>
-                            <p class="fw-1">Kerandangan, Lombok Barat</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 child">
-                        <img src="assets/img/sec2-3.png " class="img-sec2 " alt="... ">
-                        <div class="img-overlay">
-                            <h3>Pantai Pandanan</h3>
-                            <p class="fw-1">Kerandangan, Lombok Barat</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 child">
-                        <img src="assets/img/sec2-3.png " class="img-sec2 " alt="... ">
-                        <div class="img-overlay">
-                            <h3>Pantai Pandanan</h3>
-                            <p class="fw-1">Kerandangan, Lombok Barat</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 ">
-                    <img src="assets/img/sec2-3.png " class="img-sec2 " alt="... ">
-                    <div class="img-overlay">
-                        <h3>Pantai Pandanan</h3>
-                        <p class="fw-1">Kerandangan, Lombok Barat</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                        </li>
 
-    <!-- byun baekhyun saranghae <3 -->
+                    </ul>
 
-    <section class="info" id="info">
-        <div class="container py-80">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row pb-2">
-                        <div class="col-md-4">
-                            <img src="assets/img/sec3-4.png" alt="">
-                        </div>
-                        <div class="col-md-8 pl-4">
-                            <img src="assets/img/sec3-3.png" alt="">
-                        </div>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
+
+                    <!-- Content Row -->
                     <div class="row">
-                        <div class="col-md-8">
-                            <img src="assets/img/sec3-2.png" alt="">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Earnings (Monthly)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4 p-0" style="margin-left: -80px;">
-                            <img src="assets/img/sec3-1.png" alt="">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Earnings (Annual)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Pending Requests</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+
+                    <div class="row">
+
+                        <!-- Area Chart -->
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="myAreaChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pie Chart -->
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4 pb-2">
+                                        <canvas id="myPieChart"></canvas>
+                                    </div>
+                                    <div class="mt-4 text-center small">
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-primary"></i> Direct
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-success"></i> Social
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-info"></i> Referral
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Content Column -->
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Project Card Example -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
+                                    <div class="progress mb-4">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Color System -->
+                            <div class="row">
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-primary text-white shadow">
+                                        <div class="card-body">
+                                            Primary
+                                            <div class="text-white-50 small">#4e73df</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-success text-white shadow">
+                                        <div class="card-body">
+                                            Success
+                                            <div class="text-white-50 small">#1cc88a</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-info text-white shadow">
+                                        <div class="card-body">
+                                            Info
+                                            <div class="text-white-50 small">#36b9cc</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-warning text-white shadow">
+                                        <div class="card-body">
+                                            Warning
+                                            <div class="text-white-50 small">#f6c23e</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-danger text-white shadow">
+                                        <div class="card-body">
+                                            Danger
+                                            <div class="text-white-50 small">#e74a3b</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-secondary text-white shadow">
+                                        <div class="card-body">
+                                            Secondary
+                                            <div class="text-white-50 small">#858796</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-light text-black shadow">
+                                        <div class="card-body">
+                                            Light
+                                            <div class="text-black-50 small">#f8f9fc</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card bg-dark text-white shadow">
+                                        <div class="card-body">
+                                            Dark
+                                            <div class="text-white-50 small">#5a5c69</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/undraw_posting_photo.svg" alt="...">
+                                    </div>
+                                    <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely
+                                        free and without attribution!</p>
+                                    <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on
+                                        unDraw &rarr;</a>
+                                </div>
+                            </div>
+
+                            <!-- Approach -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
+                                </div>
+                                <div class="card-body">
+                                    <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes.</p>
+                                    <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="subtitle ">
-                        <img src="assets/img/border.svg" class="pr-3" alt=" ">
-                        <h6 class="d-inline-block">Lombok</h6>
-                    </div>
-                    <h1 class="font-sora">Explore Place Around You Lets See</h1>
-                    <p style="line-height: 1.5rem;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, ullam. Quo quaerat minus deserunt iure odio dolores, mollitia inventore ullam sequi nam deleniti nostrum expedita, possimus quia id tempora accusamus.</p>
-                    <div class="row text-white p-3 mt-5" style="background-color: #1A776F;">
-                        <div class="col p-3 border-right">
-                            <h3 class="mb-0">21+</h3>
-                            <p class="mb-0">Lorem</p>
-                        </div>
-                        <div class="col p-3 border-right">
-                            <h3 class="mb-0">21+</h3>
-                            <p class="mb-0">Lorem</p>
-                        </div>
-                        <div class="col p-3">
-                            <h3 class="mb-0">21+</h3>
-                            <p class="mb-0">Lorem</p>
-                        </div>
-                    </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
             </div>
-            <!-- <a href="" class="text-black-50 text-decoration-none"> -->
-            <a href="" class="text-decoration-none">
-                <div class="loc-lombok text-center py-3 ">
-                    <p class="m-0 fs-3 "><span><img src="assets/img/location.svg " alt=" " style="margin-bottom: 6px; "></span> Lombok</p>
-                </div>
-            </a>
-            <!-- </a> -->
         </div>
-    </section>
+    </div>
 
-    <section class="saran" id="saran" style="background-color: #F5F3EB;">
-        <div class="container py-80">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="subtitle ">
-                        <img src="assets/img/border.svg" class="pr-3" alt=" ">
-                        <h6 class="d-inline-block">Kritik dan Saran</h6>
-                    </div>
-                    <h1 class="font-sora m-0">Enjoy Explore need</h1>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input type="text" class="form-control border-radius-none h-40 fs-14px baybay" id="inputName" aria-describedby="emailHelp" placeholder="Nama">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control border-radius-none h-40 fs-14px baybay" id="inputName" aria-describedby="emailHelp" placeholder="Email">
-                    </div>
-                    <div class="form-group pb-4">
-                        <textarea class="form-control border-radius-none baybay fs-14px" id="exampleFormControlTextarea1" rows="3" placeholder="Saran"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block border-radius-none border-none h-40 fs-14px btn-brown baybay">Submit</button>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <section class="footer " id="footer">
-        <div class="container py-3 ">
-            <div class="row ">
-                <div class="col py-3 ">
-                    <p class="mb-0 p-0 " style="font-size: 12px; ">2020 © All Right Reserved.</p>
-                </div>
-                <div class="col p-0 justify-content-md-center py-1 ">
-                    <div class="float-right ">
-                        <span><img src="assets/img/instagram.svg " alt=" "></span>
-                        <span class="ml-3 "><img src="assets/img/facebook.svg " alt=" "></span>
-                        <span class="ml-3 "><img src="assets/img/youtube.svg " alt=" "></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
-    <!-- Bootsrap 5.2 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
-    <script>
-        $('.carousel').carousel()
-        $('.carousel').carousel({
-            interval: 0
-        })
-
-        $(window).scroll(function() {
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 200);
-        });
-
-        $(window).scroll(function() {
-            $('a').toggleClass('scrolled', $(this).scrollTop() > 200);
-        });
-
-        $(window).scroll(function() {
-            $('button').toggleClass('scrolled', $(this).scrollTop() > 200);
-        });
-
-        function scrolll() {
-            var left = document.querySelector(".scroll-image");
-            left.scrollBy(window.innerHeight, 0)
-        }
-
-        function scrollr() {
-            var right = document.querySelector(".scroll-image");
-            right.scrollBy(-window.innerHeight, 0)
-        }
-    </script>
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
 </body>
+
+</html>
