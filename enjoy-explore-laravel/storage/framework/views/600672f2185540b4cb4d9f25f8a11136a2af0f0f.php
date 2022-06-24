@@ -12,21 +12,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="assets/img/logo.svg" type="image/x-icon" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.svg" type="image/x-icon" />
+    <title>Dashboard</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark nav-pd">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/img/arrow-left.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Enjoy Explore
+                <img src="img/arrow-left.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Enjoy Explore
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,37 +45,40 @@
                 </ul>
             </div>
             <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle bg-transparent border-none baybay profile" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                    <!-- <span><img src="assets/img/logoProfile.svg" alt=""></span> -->
+                <a class="btn btn-secondary dropdown-toggle bg-transparent border-none baybay" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                    <span><img src="img/logoProfile.svg" alt=""></span>
                 </a>
 
                 <div class="dropdown-menu border-radius-none" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" style="font-size: 14px;" href="#">
                         <span>
-                            <img src="assets/img/drop-down-profile.svg" alt="" class="my-auto pr-2"> 
+                            <img src="img/drop-down-profile.svg" alt="" class="my-auto pr-2"> 
                         </span> Profile
                     </a>
-                    <a class="dropdown-item my-2" style="font-size: 14px;" href="#">
+                    <button type="submit" class="dropdown-item my-2" style="font-size: 14px;">
                         <span>
-                            <img src="assets/img/drop-down-edit-profile.svg" alt="" class="my-auto pr-2"> 
+                            <img src="img/drop-down-edit-profile.svg" alt="" class="my-auto pr-2 h-40 fs-7"> 
                         </span> Edit Profile
-                    </a>
-                    <a class="dropdown-item" style="font-size: 14px;" href="#">
-                        <span>
-                            <img src="assets/img/drop-down-logout.svg" alt="" class="my-auto pr-2"> 
-                        </span> Keluar
-                    </a>
+                    </button>
+                    <form action="/logout" method="post">
+                        <?php echo csrf_field(); ?>
+                        <button type="submit" class="dropdown-item" style="font-size: 14px;" >
+                            <span>
+                                <img src="img/drop-down-logout.svg" alt="" class="my-auto pr-2"> 
+                            </span> Keluar
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </nav>
 
     <section>
-        <div class="jumbotron jumbotron-fluid" style="background-image: url(assets/img/background-profile.png); background-repeat: no-repeat; background-size: cover; height: 400px;">
+        <div class="jumbotron jumbotron-fluid" style="background-image: url(img/background-profile.png); background-repeat: no-repeat; background-size: cover; height: 400px;">
             <div class="container">
                 <div class="row" style="margin-top: 220px; height: 208px;">
                     <div class="col-2">
-                        <img src="assets/img/photo-profile.png" alt="" class="position-absolute">
+                        <img src="img/photo-profile.png" alt="" class="position-absolute">
                     </div>
                     <div class="col-6">
                         <div class="position-absolute" style="bottom: 35px;">
@@ -85,9 +88,7 @@
                     <div class="col-4 pr-0">
                         <div class="position-absolute" style="bottom: 0; right: 0;">
                             <!-- <h4 class="m-0">Nur Zendaya</h4> -->
-                            <a href="edit-profile.html">
-                                <button type="button" class="btn align-middle btn-edit-profile float-right fw-normal p-0" style="bottom: 0;">Edit Profile</button>
-                            </a>
+                            <button type="button" class="btn align-middle btn-edit-profile float-right fw-normal p-0" style="bottom: 0;">Edit Profile</button>
                         </div>
                     </div>
                 </div>
@@ -102,20 +103,20 @@
                     <div class="row py-4">
                         <div class="col-lg-3 border-right border-2">
                             <h3 class="mb-0 pl-5">21+</h3>
-                            <p class="mb-0 pl-5">Post</p>
+                            <p class="mb-0 pl-5">Lorem</p>
                         </div>
                         <div class="col-lg-3 border-right border-2">
                             <h3 class="mb-0 pl-5">21+</h3>
-                            <p class="mb-0 pl-5">Review</p>
+                            <p class="mb-0 pl-5">Lorem</p>
                         </div>
                         <div class="col-lg-3">
                             <h3 class="mb-0 pl-5">21+</h3>
-                            <p class="mb-0 pl-5">Photos</p>
+                            <p class="mb-0 pl-5">Lorem</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 my-auto pr-4">
-                    <a href="submit.html">
+                    <a href="#">
                         <button class="btn ml-3 px-4 h-40 fs-7 btn-masuk border-radius-none float-right m-0 m-auto btn-brown baybay">Tambah Pariwisata</button>
                     </a>
                 </div>
@@ -136,14 +137,14 @@
                     <div class="row bg-blue p-3 mr-1 mb-4">
                         <div class="col-3">
                             <div class="card border-radius-none border-none pt-2 pl-2 pr-2">
-                                <img src="assets/img/rating-profile-1.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
+                                <img src="img/rating-profile-1.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
                                 <div class="card-body p-0 py-2">
                                     <p class="card-text fs-10px font-sora">Lorem, ipsum dolor.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-9">
-                            <span><img src="assets/img/star-profile.svg" alt=""></span>
+                            <span><img src="img/star-profile.svg" alt=""></span>
                             <p class="m-0 fs-14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos ad iure, adipisci culpa fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo asperiores veniam quisquam unde perferendis ex explicabo, isteaccusamussaepe,
                                 eum officia totam nostrum expedita fugiat cum illum nulla nobis aliquid.</p>
                         </div>
@@ -153,14 +154,14 @@
                     <div class="row bg-blue p-3 ml-1">
                         <div class="col-3">
                             <div class="card border-radius-none border-none pt-2 pl-2 pr-2">
-                                <img src="assets/img/rating-profile-1.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
+                                <img src="img/rating-profile-1.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
                                 <div class="card-body p-0 py-2">
                                     <p class="card-text fs-10px font-sora">Lorem, ipsum dolor.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-9">
-                            <span><img src="assets/img/star-profile.svg" alt=""></span>
+                            <span><img src="img/star-profile.svg" alt=""></span>
                             <p class="m-0 fs-14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos ad iure, adipisci culpa fuga.</p>
                         </div>
                     </div>
@@ -169,14 +170,14 @@
                     <div class="row bg-blue p-3 mr-1 mb-4">
                         <div class="col-3">
                             <div class="card border-radius-none border-none pt-2 pl-2 pr-2">
-                                <img src="assets/img/rating-profile-1.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
+                                <img src="img/rating-profile-1.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
                                 <div class="card-body p-0 py-2">
                                     <p class="card-text fs-10px font-sora">Lorem, ipsum dolor.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-9">
-                            <span><img src="assets/img/star-profile.svg" alt=""></span>
+                            <span><img src="img/star-profile.svg" alt=""></span>
                             <p class="m-0 fs-14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos ad iure, adipisci culpa fuga.</p>
                         </div>
                     </div>
@@ -185,14 +186,14 @@
                     <div class="row bg-blue p-3 ml-1">
                         <div class="col-3">
                             <div class="card border-radius-none border-none pt-2 pl-2 pr-2">
-                                <img src="assets/img/rating-profile-3.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
+                                <img src="img/rating-profile-3.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
                                 <div class="card-body p-0 py-2">
                                     <p class="card-text fs-10px font-sora">Lorem, ipsum dolor.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-9">
-                            <span><img src="assets/img/star-profile.svg" alt=""></span>
+                            <span><img src="img/star-profile.svg" alt=""></span>
                             <p class="m-0 fs-14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos ad iure, adipisci culpa fuga.</p>
                         </div>
                     </div>
@@ -201,14 +202,14 @@
                     <div class="row bg-blue p-3 mr-1 mb-4">
                         <div class="col-3">
                             <div class="card border-radius-none border-none pt-2 pl-2 pr-2">
-                                <img src="assets/img/rating-profile-1.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
+                                <img src="img/rating-profile-1.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
                                 <div class="card-body p-0 py-2">
                                     <p class="card-text fs-10px font-sora">Lorem, ipsum dolor.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-9">
-                            <span><img src="assets/img/star-profile.svg" alt=""></span>
+                            <span><img src="img/star-profile.svg" alt=""></span>
                             <p class="m-0 fs-14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos ad iure, adipisci culpa fuga.</p>
                         </div>
                     </div>
@@ -217,14 +218,14 @@
                     <div class="row bg-blue p-3 ml-1">
                         <div class="col-3">
                             <div class="card border-radius-none border-none pt-2 pl-2 pr-2">
-                                <img src="assets/img/rating-profile-2.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
+                                <img src="img/rating-profile-2.png" style="height: 100px; width: 113px;" class="card-img-top border-radius-none" alt="...">
                                 <div class="card-body p-0 py-2">
                                     <p class="card-text fs-10px font-sora">Lorem, ipsum dolor.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-9">
-                            <span><img src="assets/img/star-profile.svg" alt=""></span>
+                            <span><img src="img/star-profile.svg" alt=""></span>
                             <p class="m-0 fs-14px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quos ad iure, adipisci culpa fuga.</p>
                         </div>
                     </div>
@@ -262,15 +263,9 @@
                 </div>
                 <div class="col p-0 justify-content-md-center py-1 ">
                     <div class="float-right ">
-                        <a href="https://www.instagram.com/">
-                            <span><img src="assets/img/instagram.svg " alt=" "></span>
-                        </a>
-                        <a href="">
-                            <span class="ml-3 "><img src="assets/img/facebook.svg " alt=" "></span>
-                        </a>
-                        <a href="">
-                            <span class="ml-3 "><img src="assets/img/youtube.svg " alt=" "></span>
-                        </a>
+                        <span><img src="img/instagram.svg " alt=" "></span>
+                        <span class="ml-3 "><img src="img/facebook.svg " alt=" "></span>
+                        <span class="ml-3 "><img src="img/youtube.svg " alt=" "></span>
                     </div>
                 </div>
             </div>
@@ -308,4 +303,4 @@
     </script>
 </body>
 
-</html>
+</html><?php /**PATH C:\xampp\htdocs\web\enjoy-explore-laravel\resources\views/dashboard\index.blade.php ENDPATH**/ ?>

@@ -90,17 +90,13 @@
                 </div>
                 <div class="col-md-6 d-flex justify-content-end my-auto">
                     <div>
-                        <a href="">
-                            <span><img src="assets/img/Group 24.svg" alt=""></span>
-                        </a>
-                        <a href="#oli">
-                            <span><img src="assets/img/Group 25.svg" class="pl-3" alt=""></span>
-                        </a>
+                        <button class="btn baybay" onclick="scrollr()"><span><img src="assets/img/Group 24.svg"class="" alt=" "></span></button>
+                        <button class="btn baybay" onclick="scrolll()"><span><img src="assets/img/Group 25.svg" alt=" "></span></button>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 d-flex flex-row flex-nowrap overflow-hidden scroll-smooth">
-                <div class="col-md-3">
+            <div class="row mt-5 d-flex flex-row flex-nowrap overflow-hidden scroll-smooth scroll-image cover">
+                <div class="col-md-3 child">
                     <div class="card card-hover">
                         <img class="card-img-top" src="assets/img/carddetail1.jpg" alt="Card image cap">
                         <div class="obj-overlay d-flex justify-content-center">
@@ -108,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 child">
                     <div class="card">
                         <img class="card-img-top" src="assets/img/bananaBoat.jpg" alt="Banana Boat">
                         <div class="obj-overlay justify-content-center">
@@ -116,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 child">
                     <div class="card">
                         <img class="card-img-top" src="assets/img/restaurant.jpg" alt="Card image cap">
                         <div class="obj-overlay justify-content-center">
@@ -124,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 child">
                     <div class="card">
                         <img class="card-img-top" src="assets/img/penginapan.jpg" alt="Card image cap">
                         <div class="obj-overlay justify-content-center">
@@ -132,11 +128,89 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3" id="oli">
+                <div class="col-md-3 child">
                     <div class="card">
                         <img class="card-img-top" src="assets/img/penginapan.jpg" alt="Card image cap">
                         <div class="obj-overlay justify-content-center">
                             Home Stay
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 child">
+                    <div class="card card-hover">
+                        <img class="card-img-top" src="assets/img/carddetail1.jpg" alt="Card image cap">
+                        <div class="obj-overlay d-flex justify-content-center">
+                            Mushola
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 child">
+                    <div class="card">
+                        <img class="card-img-top" src="assets/img/bananaBoat.jpg" alt="Banana Boat">
+                        <div class="obj-overlay justify-content-center">
+                            Banana Boat
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="kontribusi" id="kontribusi" style="margin-top: 360px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <!-- image -->
+                    <div>
+                        <img src="assets/img/kontribusi-people.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row mb-5">
+                        <div class="col">
+                            <p>02</p>
+                            <h1 class="display-3 font-sora fw-600">Kontribusi</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row mb-5">
+                            <div class="col-4">
+                                <div class="circle-kontribusi border-radius-999 fs-32 text-center" style="padding-top: 20px;">
+                                    01
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5>Unggah Foto</h5>
+                                <div class="form-group pb-4">
+                                    <input class="form-control border-radius-none fs-14px baybay" type="file" id="formFile" accept="image/jpg, image/jpeg, image/png" style="border: 0.5px dashed; border-color: #9794A5;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-4">
+                                <div class="circle-kontribusi border-radius-999 fs-32 text-center" style="padding-top: 20px;">
+                                    02
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5>Beri Ulasan</h5>
+                                <div class="form-group pb-4">
+                                    <textarea class="form-control border-radius-none baybay" id="exampleFormControlTextarea1" rows="3" placeholder="Saran"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-4">
+                                <div class="circle-kontribusi border-radius-999 fs-32 text-center" style="padding-top: 20px;">
+                                    03
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <h5>Beri Rating</h5>
+                                <div class="form-group pb-4">
+                                    <input class="form-control border-radius-none fs-14px baybay" type="file" id="formFile" accept="image/jpg, image/jpeg, image/png" style="border: 0.5px dashed; border-color: #9794A5;">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,6 +382,16 @@
         $(window).scroll(function() {
             $('button').toggleClass('scrolled', $(this).scrollTop() > 200);
         });
+
+        function scrolll() {
+            var left = document.querySelector(".scroll-image");
+            left.scrollBy(window.innerHeight, 0)
+        }
+
+        function scrollr() {
+            var right = document.querySelector(".scroll-image");
+            right.scrollBy(-window.innerHeight, 0)
+        }
     </script>
 </body>
 
