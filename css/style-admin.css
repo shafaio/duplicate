@@ -12,6 +12,10 @@
     color: #232323 !important;
 }
 
+.text-primary-2 {
+    color: #4e73df !important;
+}
+
 .a.page-link {
     background-color: #C37B52 !important;
 }
@@ -42,5 +46,4 @@ a {
 .sidebar .nav-item .collapse .collapse-inner .collapse-item.active,
 .sidebar .nav-item .collapsing .collapse-inner .collapse-item.active {
     color: #C37B52!important;
-    font-weight: 700;
 }
